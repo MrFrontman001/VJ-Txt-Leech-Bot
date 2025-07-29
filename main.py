@@ -35,7 +35,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b><blockquote>‣  🤖 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ᴍᴀᴋᴇ ʏᴏᴜʀ ʟɪғᴇ ᴇᴀꜱɪᴇʀ ʙʏ\n‣  📥 ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏꜱ ғʀᴏᴍ ʏᴏᴜʀ .ᴛxᴛ ʙᴀᴛᴄʜꜱ \n‣  📬 ᴜᴘʟᴏᴀᴅɪɴɢ ᴛʜᴇᴍ ᴅɪʀᴇᴄᴛʟʏ ᴛᴏ Tᴇʟᴇɢʀᴀᴍ. !!</blockquote>\n\n╭────────────⊰◆⊱────────────╮\n   ꜱᴇɴᴅ /upload ᴀɴᴅ ғᴏʟʟᴏᴡ ꜱᴛᴇᴘꜱ  🗒..\n   ꜱᴇɴᴅ /stop ᴛᴏ ꜱᴛᴏᴘ ᴏɴɢᴏɪɴɢ ᴛᴀꜱᴋ 🔴....</b>")
+    await m.reply_text(f"<b><blockquote>‣  🤖 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ᴍᴀᴋᴇ ʏᴏᴜʀ ʟɪғᴇ ᴇᴀꜱɪᴇʀ ʙʏ\n‣  📥 ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏꜱ ғʀᴏᴍ ʏᴏᴜʀ .ᴛxᴛ ʙᴀᴛᴄʜꜱ \n‣  📬 ᴜᴘʟᴏᴀᴅɪɴɢ ᴛʜᴇᴍ ᴅɪʀᴇᴄᴛʟʏ ᴛᴏ Tᴇʟᴇɢʀᴀᴍ. !!</blockquote>\n\n╭────────────⊰◆⊱────────────╮\n   ꜱᴇɴᴅ /upload ᴀɴᴅ ғᴏʟʟᴏᴡ ꜱᴛᴇᴘꜱ  🗒..\n   ꜱᴇɴᴅ /stop ᴛᴏ ꜱᴛᴏᴘ ᴏɴɢᴏɪɴɢ ᴛᴀꜱᴋ 🔴.... \n╰────────────⊰◆⊱────────────╯</b>")
 
 
 @bot.on_message(filters.command("stop"))
@@ -217,7 +217,7 @@ async def upload(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n\n**📕 𝗡𝗮𝗺𝗲 »** `{name}`\n\n🎬 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 » `{raw_text2}`\n\n**🔗 𝗨𝗥𝗟 »** `{url}`"
+                    Show = f"**⧭⧪⧭ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶 ⧭⧪⧭... »**\n\n\n<blockquote>📕 𝗡𝗮𝗺𝗲 » `{name}`\n\n🎬 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 » `{raw_text2}`</blockquote>\n\n<blockquote>🔗 𝗨𝗥𝗟 » `{url}`</blockquote>"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
